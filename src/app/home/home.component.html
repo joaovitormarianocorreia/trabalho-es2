@@ -1,0 +1,47 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <lbd-chart
+                  [title]="'Variantes'"
+                  [subtitle]="'Porcentagem de infecções por variante'"
+                  [chartClass]="'ct-perfect-fourth'"
+                  [chartType]="variantsChartType"
+                  [chartData]="variantsChartData"
+                  [legendItems]="variantsChartLegendItems"
+                  [withHr]="true"
+                  [footerIconClass]="'fa fa-clock-o'"
+                  [footerText]="'Atualizado em 12 de Julho de 2021. Fonte: Our World in Data'">
+                </lbd-chart>
+            </div>
+            <div class="col-md-8">
+                <lbd-chart
+                  [title]="'Total de Casos'"
+                  [subtitle]="'Número total de casos acumulado desde o início'"
+                  [chartType]="totalCasesChartType"
+                  [chartData]="totalCasesChartData"
+                  [chartOptions]="totalCasesChartOptions"
+                  [chartResponsive]="totalCasesChartResponsive"
+                  [withHr]="true"
+                  [footerIconClass]="'fa fa-history'"
+                  [footerText]="'Atualizado em 25 de Julho de 2021'">
+                </lbd-chart>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <lbd-chart
+                  [title]="'Novos Casos'"
+                  [subtitle]="'Número de novos casos desde o início'"
+                  [chartType]="newCasesChartType"
+                  [chartData]="newCasesChartData"
+                  [chartOptions]="newCasesChartOptions"
+                  [chartResponsive]="newCasesChartResponsive"
+                  [withHr]="true"
+                  [footerIconClass]="'fa fa-history'"
+                  [footerText]="'Atualizado em 25 de Julho de 2021'">
+                </lbd-chart>
+            </div>
+        </div>
+    </div>
+</div>
